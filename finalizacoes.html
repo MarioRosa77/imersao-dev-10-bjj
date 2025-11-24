@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Finalizações</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+    <h1 id="titulo"></h1>
+    <p>Escolha a finalização que deseja alcançar:</p>
+
+    <div id="listaFinalizacoes"></div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+    const tipo = localStorage.getItem('tipoJogo');
+    document.getElementById("titulo").innerText = 
+        tipo === "passador" ? "Finalizações para Passadores" : "Finalizações para Guardeiros";
+
+    const response = await fetch('data.json');
+    const data = await response.json();
+    const finalizacoesFiltradas = data.finalizacoes.filter(f => f.tipo === tipo);
+
+    const lista = document.getElementById("listaFinalizacoes");
+    finalizacoesFiltradas.forEach(f => {
+        const btn = document.createElement("button");
+        btn.innerText = f.nome;
+        btn.onclick = () => {
+            localStorage.setItem("finalizacaoEscolhida", f.nome);
+            window.location.href = "caminhos.html";
+        };
+        lista.appendChild(btn);
+    });
+});
+</script>
+
+</body>
+</html>

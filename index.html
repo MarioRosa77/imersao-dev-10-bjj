@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Base de Conhecimento – Jiu-Jitsu</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>Qual é o seu jogo?</h1>
+        <p>Selecione abaixo:</p>
+
+        <button onclick="escolher('passador')">Passador</button>
+        <button onclick="escolher('guardeiro')">Guardeiro</button>
+    </div>
+
+<script>
+function escolher(tipo) {
+    localStorage.setItem('tipoJogo', tipo);
+    window.location.href = "finalizacoes.html";
+}
+</script>
+
+</body>
+</html>

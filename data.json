@@ -1,0 +1,232 @@
+{
+  "finalizacoes": [
+    {
+      "nome": "Mata Leão",
+      "tipo": "guardeiro",
+      "nivel": "intermediário",
+      "caminho": [
+        "Guarda De La Riva",
+        "Entrada no Berimbolo",
+        "Exposição das costas",
+        "Fixação dos ganchos",
+        "Controle do seat belt",
+        "Quebra da defesa do queixo",
+        "Ajuste do ângulo",
+        "Fechamento do Mata Leão"
+      ],
+      "variacoes": [
+        "Mata Leão sem pegada na nuca",
+        "Mata Leão com mão atrás da cabeça",
+        "Mata Leão com corpo totalmente lateral"
+      ],
+      "entradasAlternativas": [
+        "Raspagem de gancho para costas",
+        "Saída da meia-guarda profunda",
+        "Transição do arco e flecha"
+      ],
+      "defesasComuns": [
+        "Segurar o antebraço atacado",
+        "Queixo no peito",
+        "Decolar a pegada inferior"
+      ],
+      "riscos": [
+        "Ajustar muito cedo e perder os ganchos",
+        "Oponente virar de frente e escapar"
+      ]
+    },
+    {
+      "nome": "Katagatame",
+      "tipo": "passador",
+      "nivel": "avançado",
+      "caminho": [
+        "Passagem para 100kg",
+        "Crossface profundo",
+        "Isolamento do braço adversário",
+        "Queda da perna para ajustar ângulo",
+        "Fechamento da pinça no pescoço",
+        "Pressão para finalizar"
+      ],
+      "variacoes": [
+        "Katagatame montado",
+        "Katagatame do lado",
+        "Katagatame com guilhotina armada"
+      ],
+      "entradasAlternativas": [
+        "Passagem de joelho no estômago",
+        "Torre passando guarda fechada",
+        "Defesa do double-leg (sprawl e laço)"
+      ],
+      "defesasComuns": [
+        "Criar espaço com antebraço no pescoço",
+        "Virar de quatro",
+        "Fechar as mãos para impedir isolamento"
+      ],
+      "riscos": [
+        "Perder a montada ao tentar ajustar",
+        "Tirar peso demais do pescoço do adversário"
+      ]
+    },
+    {
+      "nome": "Arm Lock",
+      "tipo": "passador",
+      "nivel": "iniciante",
+      "caminho": [
+        "Montada alta",
+        "Isolamento do braço",
+        "Joelho na orelha do adversário",
+        "Giro do quadril",
+        "Travamento dos joelhos",
+        "Hiperextensão do braço"
+      ],
+      "variacoes": [
+        "Arm Lock invertido",
+        "Arm Lock da montada cruzada",
+        "Arm Lock da guarda"
+      ],
+      "entradasAlternativas": [
+        "Ataque simultâneo americana → arm lock",
+        "Transição de estrangulamento S mount",
+        "S mount com rolamento"
+      ],
+      "defesasComuns": [
+        "Segurar o próprio bíceps",
+        "Cruzar os braços",
+        "Posturar para trás"
+      ],
+      "riscos": [
+        "Falta de controle dos joelhos",
+        "Oponente empurrar e passar a guarda"
+      ]
+    },
+    {
+      "nome": "Triângulo",
+      "tipo": "guardeiro",
+      "nivel": "intermediário",
+      "caminho": [
+        "Guarda fechada",
+        "Quebra de postura",
+        "Isolamento de um braço",
+        "Ajuste lateral do quadril",
+        "Perna sobre o ombro",
+        "Fechamento do triângulo",
+        "Ajuste angular",
+        "Compressão final"
+      ],
+      "variacoes": [
+        "Triângulo invertido",
+        "Triângulo montado",
+        "Triângulo de braço (arm triangle)"
+      ],
+      "entradasAlternativas": [
+        "Arm drag",
+        "Quebra de postura com pegada cruzada",
+        "Transição da guarda laço"
+      ],
+      "defesasComuns": [
+        "Postura alta",
+        "Braço por dentro da coxa",
+        "Queda lateral no lado oposto"
+      ],
+      "riscos": [
+        "Perder a perna e abrir espaço",
+        "Triângulo mal ajustado sem ângulo"
+      ]
+    },
+    {
+      "nome": "Guilhotina",
+      "tipo": "passador",
+      "nivel": "intermediário",
+      "caminho": [
+        "Sprawl",
+        "Entrada da mão sob o pescoço",
+        "Fechamento da pegada",
+        "Guarda fechada ou meia",
+        "Ajuste da linha do antebraço",
+        "Afunda cotovelo e sobe o pulso"
+      ],
+      "variacoes": [
+        "Guilhotina arm-in",
+        "Guilhotina de mão cruzada",
+        "Guillotine high elbow"
+      ],
+      "entradasAlternativas": [
+        "Defesa de single-leg",
+        "Erro de queda do adversário",
+        "Pull para guarda fechada com pegada no pescoço"
+      ],
+      "defesasComuns": [
+        "Passar para o lado oposto da cabeça",
+        "Mão no ombro afastando o estrangulamento",
+        "Quebra da pegada"
+      ],
+      "riscos": [
+        "Tomar queda e perder o ajuste",
+        "Ficar por baixo com a guarda passada"
+      ]
+    },
+    {
+      "nome": "Leg Lock",
+      "tipo": "passador",
+      "nivel": "avançado",
+      "caminho": [
+        "Entrada em 50/50 ou Ashi Garami",
+        "Controle do quadril",
+        "Isolamento da perna alvo",
+        "Fechamento da linha do joelho",
+        "Ajuste da pegada",
+        "Torção ou extensão"
+      ],
+      "variacoes": [
+        "Inside Heel Hook",
+        "Outside Heel Hook",
+        "Toe Hold"
+      ],
+      "entradasAlternativas": [
+        "Raspagem para X-garami",
+        "De La Riva invertida",
+        "Entrada após queda falsa"
+      ],
+      "defesasComuns": [
+        "Girar para livrar o calcanhar",
+        "Travar a linha do joelho com a mão",
+        "Pisar no quadril para escapar"
+      ],
+      "riscos": [
+        "Perder posição e entregar passagem",
+        "Entrar em posição espelhada e tomar contra-ataque"
+      ]
+    },
+    {
+      "nome": "Chave de Panturrilha",
+      "tipo": "passador",
+      "nivel": "avançado",
+      "caminho": [
+        "Entrada em 50/50 ou contraataque de passagem",
+        "Isolamento da perna adversária",
+        "Canela pressionando a panturrilha",
+        "Bloqueio do pé entre as pernas",
+        "Extensão simultânea",
+        "Compressão para finalizar"
+      ],
+      "variacoes": [
+        "Chave de panturrilha montada",
+        "Calf slicer no gancho",
+        "Calf slicer da meia-guarda"
+      ],
+      "entradasAlternativas": [
+        "Defesa de queda com scramble",
+        "Raspagem falhada",
+        "Inversão a partir da De La Riva"
+      ],
+      "defesasComuns": [
+        "Abrir o gancho com as mãos",
+        "Girar a perna oposta",
+        "Controle da ponta do pé"
+      ],
+      "riscos": [
+        "Pode perder a perna e dar costas",
+        "Adversário pode contra-atacar com toe hold"
+      ]
+    }
+  ]
+}

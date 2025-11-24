@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Caminho da Finalização</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header-detalhe">
+        <h1 id="finalizacaoTitulo"></h1>
+        <span id="nivel-badge"></span>
+    </div>
+
+    <div class="detalhe-section">
+        <h2>Caminho Principal</h2>
+        <ul id="listaCaminhos"></ul>
+    </div>
+
+    <div class="detalhe-section">
+        <h2>Variações</h2>
+        <ul id="listaVariacoes"></ul>
+    </div>
+
+    <div class="detalhe-section">
+        <h2>Entradas Alternativas</h2>
+        <ul id="listaEntradas"></ul>
+    </div>
+
+    <div class="detalhe-section">
+        <h2>Defesas Comuns</h2>
+        <ul id="listaDefesas"></ul>
+    </div>
+
+    <div class="detalhe-section">
+        <h2>Riscos e Pontos de Atenção</h2>
+        <ul id="listaRiscos"></ul>
+    </div>
+
+    <a href="finalizacoes.html" class="back-button">Voltar para finalizações</a>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+    const finalizacaoNome = localStorage.getItem("finalizacaoEscolhida");
+    document.getElementById("finalizacaoTitulo").innerText = finalizacaoNome;
+
+    const response = await fetch('data.json');
+    const data = await response.json();
+    const finalizacaoObj = data.finalizacoes.find(f => f.nome === finalizacaoNome);
+
+    if (finalizacaoObj) {
+        document.getElementById("nivel-badge").textContent = finalizacaoObj.nivel || '';
+        const populateList = (elementId, items) => {
+            const list = document.getElementById(elementId);
+            if (!items || items.length === 0) {
+                list.innerHTML = '<li>Nenhuma informação cadastrada.</li>';
+                return;
+            }
+            list.innerHTML = items.map(item => `<li>${item}</li>`).join('');
+        };
+
+        populateList('listaCaminhos', finalizacaoObj.caminho);
+        populateList('listaVariacoes', finalizacaoObj.variacoes);
+        populateList('listaEntradas', finalizacaoObj.entradasAlternativas);
+        populateList('listaDefesas', finalizacaoObj.defesasComuns);
+        populateList('listaRiscos', finalizacaoObj.riscos);
+    }
+});
+</script>
+
+</body>
+</html>
